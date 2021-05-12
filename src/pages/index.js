@@ -6,14 +6,16 @@ import {
   HeadingXL,
   HeadingL,
   Layout,
+  Image,
   SEO,
   TextBody,
   TextDate,
 } from "../components"
 import {BREAKPOINT} from "../utils/constants"
+import "../styles/extra.css"
 
 const Hero = styled.div`
-  margin-bottom: 20vh;
+  margin-bottom: 12vh;
 
   @media (max-width: ${BREAKPOINT}px) {
     margin-bottom: 15vh;
@@ -22,21 +24,18 @@ const Hero = styled.div`
 const TextHome = styled.p`
   color: var(--dark-color-light);
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 10vh;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 28em;
   text-align: center;
 
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 19px;
+    font-size: 18px;
     margin-bottom: 7vh;
   }
 `
 const Post = styled.div`
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #645252;
   margin-bottom: 50px;
 
   @media (max-width: ${BREAKPOINT}px) {
@@ -45,16 +44,21 @@ const Post = styled.div`
 `
 
 export default function Home({data}) {
+  console.log(data)
   return (
     <>
       <SEO title="Blog" />
       <HeaderLogo />
       <Layout>
         <Hero>
-          <HeadingXL>Lewis Gatsby Starter Blog</HeadingXL>
+          <Image
+            fixed={data.file.childImageSharp.fixed}
+            className="perfil-photo"
+          />
+          <HeadingXL>Génesis León</HeadingXL>
           <TextHome>
-            This is a custom Gatsby starter template to start a new blog or
-            personal website.
+            Este lugar parte de la necesidad de documentar y compartir algunos
+            conocimientos y reflexiones sobre periodismo, política y música.
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({node}) => (
@@ -85,6 +89,13 @@ export const data = graphql`
             slug
           }
           excerpt
+        }
+      }
+    }
+    file(relativePath: {eq: "assets/images/perfil.jpg"}) {
+      childImageSharp {
+        fixed(width: 140, height: 140) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

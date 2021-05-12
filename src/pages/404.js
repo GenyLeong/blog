@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 const ButtonCentered = styled(Button)`
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
 `
 
 export default function NotFoundPage() {
@@ -20,15 +20,15 @@ export default function NotFoundPage() {
       <SEO title="404: Not found" />
       <Layout>
         <Wrapper>
-          <HeadingXL>NOT FOUND</HeadingXL>
+          <HeadingXL>NULL</HeadingXL>
           <TextBody style={{textAlign: "center"}}>
-            This page doesn&#39;t exist{" "}
+            Esta entrada todavía no está escrita{" "}
             <span role="img" aria-label="duh">
               😓
             </span>
           </TextBody>
           <Link to="/">
-            <ButtonCentered>Go home</ButtonCentered>
+            <ButtonCentered>Seguir leyendo</ButtonCentered>
           </Link>
         </Wrapper>
       </Layout>

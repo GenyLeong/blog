@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Lewis Gatsby Starter Blog`,
+    title: `Génesis León`,
     description: `A custom Gatsby starter template to start a blog or personal website.`,
     siteUrl: `https://lewis-gatsby-starter-blog.netlify.com`,
   },
@@ -40,7 +40,7 @@ module.exports = {
               maxWidth: 900,
               quality: 75,
               withWebp: true,
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
             },
           },
         ],

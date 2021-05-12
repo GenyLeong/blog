@@ -20,9 +20,9 @@ const Logo = styled.p`
 export function HeaderLogo() {
   return (
     <HeaderWrapper>
-      <Logo>LGSB</Logo>
-      <Link to="/about">
-        <p>About</p>
+      {/* <Logo>LGSB</Logo> */}
+      <Link to="https://genyleong.github.io/">
+        <p>Portafolio</p>
       </Link>
     </HeaderWrapper>
   )

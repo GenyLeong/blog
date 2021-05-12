@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 19px;
     font-weight: 400;
     height: 100%;
-    padding-top: 20vh;
+    padding-top: 10vh;
 
   @media (max-width: ${BREAKPOINT}px) {
       font-size: 17px;
@@ -69,6 +69,8 @@ export const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeSpeed;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    background: radial-gradient(circle, #9ad18b, #bac37f, #ccb782, #d2ac8d, #cca69a);
+
   }
 
   /* Remove list styles on ul, ol elements with a class attribute */
