@@ -1,5 +1,6 @@
 import React from "react"
 import {graphql} from "gatsby"
+import {Disqus} from "gatsby-plugin-disqus"
 import {
   HeaderBack,
   HeadingXL,
@@ -9,7 +10,13 @@ import {
   TextDate,
 } from "../components"
 
-export default function BlogPost({data}) {
+export default function BlogPost({data, location}) {
+  const post = data.markdownRemark
+  let disqusConfig = {
+    url: `${data.site.siteMetadata.siteUrl + location.pathname}`,
+    identifier: post.frontmatter.date,
+    title: post.frontmatter.title,
+  }
   return (
     <>
       <SEO title={data.markdownRemark.frontmatter.title} />
@@ -20,6 +27,7 @@ export default function BlogPost({data}) {
         <TextBody
           dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}
         />
+        <Disqus config={disqusConfig} />
       </Layout>
     </>
   )
@@ -32,6 +40,12 @@ export const data = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        siteUrl
       }
     }
   }

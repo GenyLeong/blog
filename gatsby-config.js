@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Génesis León`,
     description: `A custom Gatsby starter template to start a blog or personal website.`,
-    siteUrl: `https://lewis-gatsby-starter-blog.netlify.com`,
+    siteUrl: `https://genyleong.github.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -44,6 +44,12 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `genyleong`,
       },
     },
     `gatsby-plugin-offline`,
