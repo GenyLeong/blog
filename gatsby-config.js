@@ -1,8 +1,9 @@
 module.exports = {
+  pathPrefix: "/blog",
   siteMetadata: {
     title: `Génesis León`,
     description: `A custom Gatsby starter template to start a blog or personal website.`,
-    siteUrl: `https://genyleong.github.io/`,
+    siteUrl: `https://genyleong.github.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
