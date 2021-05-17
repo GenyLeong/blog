@@ -21,9 +21,9 @@ export function HeaderLogo() {
   return (
     <HeaderWrapper>
       {/* <Logo>LGSB</Logo> */}
-      <Link to="https://genyleong.github.io/">
+      <a href="https://genyleong.github.io/">
         <p>Portafolio</p>
-      </Link>
+      </a>
     </HeaderWrapper>
   )
 }
