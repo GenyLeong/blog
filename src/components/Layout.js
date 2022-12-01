@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import {Footer, GlobalStyles} from "../components"
-import {BREAKPOINT} from "../utils/constants"
+import { Footer, GlobalStyles } from "../components"
+import { BREAKPOINT } from "../utils/constants"
 
-const Wrapper = styled.div`
+const Wrapper = styled.div `
   margin: 0 auto;
   max-width: 1400px;
   padding: 0 var(--sides-padding-desktop);
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Content = styled.main`
+const Content = styled.main `
   margin: 0 auto;
   max-width: 900px;
 
@@ -22,14 +22,11 @@ const Content = styled.main`
   }
 `
 
-export function Layout({children}) {
-  return (
-    <>
-      <GlobalStyles />
-      <Wrapper>
-        <Content>{children}</Content>
-        <Footer />
-      </Wrapper>
-    </>
-  )
-}
+export function Layout({ children }) {
+    return ( <>
+        <GlobalStyles/>
+        <Wrapper >
+        <Content > { children } </Content>   
+<Footer/>
+        </Wrapper> </>
+    )}

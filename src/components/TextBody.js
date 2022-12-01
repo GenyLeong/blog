@@ -7,6 +7,7 @@ export const TextBody = styled.div`
   letter-spacing: -0.003em;
   line-height: 1.5;
   margin: 0 5% 5vh 5%;
+  text-align: justify;
 
   @media (max-width: ${BREAKPOINT}px) {
     margin: 0 0 5vh 0;

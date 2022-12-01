@@ -1,0 +1,9 @@
+{
+    "editor.codeActionsOnSave": {
+    
+    },
+    "editor.autoIndent": "none",
+"eslint.format.enable": false,
+"files.autoSave": "off",
+"editor.formatOnSave": false
+}
