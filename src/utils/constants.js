@@ -1,4 +1,4 @@
-export const BREAKPOINT = 849
+export const BREAKPOINT = 768
 
 export const constructUrl = (baseUrl, path) =>
-  !baseUrl || !path ? null : `${baseUrl}${path}`
+    !baseUrl || !path ? null : `${baseUrl}${path}`

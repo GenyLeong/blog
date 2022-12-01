@@ -425,14 +425,14 @@ Actualmente, el Ministerio de Vivienda maneja dos modalidades
           diferentes necesidades de los ciudadanos”, detallaron.
         </p>
         <p>
-          Si bien es cierto que garantizar el acceso a la vivienda digna es
+          Por último, garantizar el acceso a la vivienda digna es
           indispensable porque afecta el ejercicio de otros derechos
           fundamentales como la calidad de vida y la formación de los ciudadanos
-          en las infancias, las políticas no están orientadas a ello. Así, por
+          en las infancias y las políticas públicas inciden sobre ello. Así, por
           ejemplo, el hacinamiento, los materiales precarios y la falta de
-          servicios públicos impiden contar con espacios adecuados para, por
-          ejemplo, estudiar y descansar, lo que repercute en el desarrollo
-          cognitivo y en el desarrollo laboral en la adultez, y genera mayor
+          servicios públicos impiden contar con espacios adecuados para actividades
+          básicas como estudiar y descansar, lo que repercute en el desarrollo
+          cognitivo y laboral en la adultez, lo que genera mayor
           desigualdad en la salud social.
         </p>
       </div>

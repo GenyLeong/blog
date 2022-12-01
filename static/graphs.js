@@ -242,12 +242,13 @@ const deficit_cualitativo = bb.generate({
                 747616,
                 674685,
                 1011090,
+                1054000,
                 1470000,
             ],
         ],
         type: "line",
         colors: {
-            "Cantidad de hogares": "#B5C39F",
+            "Cantidad de hogares": "#58643F",
         },
     },
     axis: {
@@ -299,7 +300,7 @@ const deficit_cualitativo_cepal = bb.generate({
         ],
         type: "line",
         colors: {
-            "Cantidad de hogares": "#B5C39F",
+            "Cantidad de hogares": "#58643F",
         },
     },
     axis: {
@@ -334,8 +335,8 @@ const deficit_cualitativo_cepal = bb.generate({
 document
     .getElementById("select_trabajo")
     .addEventListener("change", function() {
-        var obj = document.getElementById("select_trabajo");
-        obj_select = obj.options[obj.selectedIndex].text;
+        const obj = document.getElementById("select_trabajo");
+        let obj_select = obj.options[obj.selectedIndex].text;
         if (obj_select == "Trabajador(a) Dependiente") {
             ingresos_quantiles.load({
                 columns: [

@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import {BREAKPOINT} from "../utils/constants"
+import { BREAKPOINT } from "../utils/constants"
 
-export const HeadingXL = styled.h1`
+export const HeadingXL = styled.h1 `
   background: #000;
   display: block;
   font-size: 24px;
@@ -13,7 +13,7 @@ export const HeadingXL = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media (max-width: ${BREAKPOINT}px) {
+  @media (min-width: ${BREAKPOINT}px) {
     font-size: 45px;
   }
 `

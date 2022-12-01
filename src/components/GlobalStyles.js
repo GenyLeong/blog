@@ -1,8 +1,8 @@
-import {createGlobalStyle} from "styled-components"
+import { createGlobalStyle } from "styled-components"
 import * as font from "../assets/fonts"
-import {BREAKPOINT} from "../utils/constants"
+import { BREAKPOINT } from "../utils/constants"
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle `
   :root {
     --accent-color: hsl(339, 100%, 55%);
     --dark-color: hsl(0, 0%, 15%);
