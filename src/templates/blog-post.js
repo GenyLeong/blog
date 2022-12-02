@@ -32,7 +32,7 @@ export default function BlogPost({ data, location }) {
         href = "https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css" />
         <script src = "https://public.flourish.studio/resources/embed.js" > </script>  
         <script type = "module"
-        src = "graphs.js" > </script>  
+        src = "static/graphs.js" > </script>  
         </Helmet>  <
         SEO title = { data.markdownRemark.frontmatter.title }
         description = { data.markdownRemark.frontmatter.description }
