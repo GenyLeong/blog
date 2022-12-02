@@ -1,6 +1,6 @@
 import "https://d3js.org/d3.v6.min.js";
 // import "/node_modules/d3-time-format/";
-// import "https://unpkg.com/billboard.js/dist-esm/billboard.js"
+//import "https://unpkg.com/billboard.js/dist-esm/billboard.js"
 
 const month = new Array();
 month[0] = "Enero";
@@ -229,6 +229,7 @@ const prestamos_quantiles = bb.generate({
     },
     bindto: "#prestamos_quantiles",
 });
+
 const deficit_cualitativo = bb.generate({
     // title: {
     //   text: "DÉFICIT HABITACIONAL CUALITATIVO APROXIMADO",
@@ -283,6 +284,7 @@ const deficit_cualitativo = bb.generate({
     },
     bindto: "#deficit_cualitativo",
 });
+
 const deficit_cualitativo_cepal = bb.generate({
     // title: {
     //   text: "DÉFICIT HABITACIONAL CUALITATIVO SEGÚN CEPAL",
@@ -332,6 +334,7 @@ const deficit_cualitativo_cepal = bb.generate({
     },
     bindto: "#deficit_cualitativo_cepal",
 });
+
 document
     .getElementById("select_trabajo")
     .addEventListener("change", function() {
