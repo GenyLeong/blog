@@ -48,36 +48,29 @@ export default function Home({ data }) {
     console.log(data)
     return ( < >
     
-            <
-            SEO title = "Blog" / >
-            <
-            HeaderLogo / >
-            <
-            Layout >
-            <
-            Hero >
-            <
-            Image fixed = { data.file.childImageSharp.fixed }
-            className = "perfil-photo" / >
-            <
-            HeadingXL > Génesis León < /HeadingXL>{" "}  <
-            TextHome >
-            Este lugar parte de la necesidad de documentar y compartir algunos conocimientos y reflexiones sobre periodismo, política y música. { " " } < /TextHome>{" "}  <
-            /Hero > { " " } {
-            data.allMarkdownRemark.edges.map(({ node }) => ( <
-                Link to = { node.fields.slug }
+            <SEO title = "Blog" />
+            <HeaderLogo />
+            <Layout>
+            <Hero>
+            <Image fixed = { data.file.childImageSharp.fixed }
+            className = "perfil-photo" />
+            <HeadingXL > Génesis León </HeadingXL>{" "}  
+          <TextHome >
+            Este lugar parte de la necesidad de documentar y compartir algunos conocimientos y reflexiones sobre periodismo, política y música. { " " } 
+        </TextHome>{" "}  
+            </Hero > { " " } {
+            data.allMarkdownRemark.edges.map(({ node }) => ( 
+                  <Link to = { node.fields.slug }
                 key = { node.id } >
-                <
-                Post >
-                <
-                HeadingL > { node.frontmatter.title } < /HeadingL>{" "} <
-                TextBody > { node.excerpt } < /TextBody>{" "} <
-                TextDate > { node.frontmatter.date } < /TextDate>{" "} < /
-                Post > { " " } <
-                /Link>
+                <Post>
+                <HeadingL> { node.frontmatter.title } </HeadingL>{" "} 
+                <TextBody> { node.excerpt } </TextBody>{" "} 
+                <TextDate > { node.frontmatter.date } </TextDate>{" "} 
+                  </Post > { " " } 
+                </Link>
             ))
-        } { " " } < /Layout>{" "}  <
-        / >
+        } { " " } </Layout>{" "}  
+    </>
 )
 }
 

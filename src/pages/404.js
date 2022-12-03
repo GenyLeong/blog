@@ -8,18 +8,18 @@ const ButtonCentered = styled(Button)
 ` margin-left: auto; margin-right: auto; margin-top: 5vh; `
 export default function NotFoundPage() {
     return ( < >
-            <SEO title = "404: Not found" / >
+            <SEO title = "404: Not found" />
             <Layout >
             <Wrapper >
-            <HeadingXL > NULL 
-</HeadingXL> <TextBody style = {
-                { textAlign: "center" }
-            } > Esta entrada todavía no está escrita { " " } 
+            <HeadingXL > NULL </HeadingXL> <TextBody style = { { textAlign: "center" }
+        } > Esta entrada todavía no está escrita { " " } 
 <span role = "img" aria-label = "duh" > 😓
-            </span> 
-</TextBody > <Link to = "/" >
-            <ButtonCentered > Seguir leyendo </ButtonCentered> 
-            </Link > 
-        </Wrapper> 
-    </Layout > 
-</> ) }
+        </span>  
+</TextBody > <Link to = "/blog" > 
+<ButtonCentered > Seguir leyendo </ButtonCentered>  
+</Link >  
+</Wrapper>  
+</Layout >  
+</> 
+
+)}

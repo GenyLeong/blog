@@ -27,12 +27,12 @@ export default function BlogPost({ data, location }) {
     return ( <>
         <Helmet >
         <script src = "https://d3js.org/d3.v6.min.js" > </script>  
-        <script src = "https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js" > </script>  
+        <script src = { `https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js`} > </script>  
         <link rel = "stylesheet"
         href = "https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css" />
         <script src = "https://public.flourish.studio/resources/embed.js" > </script>  
-        <script type = "module"
-        src = "../static/graphs.js" > </script>  
+        <script defer type = "module"
+        src = { `../graphs.js` } > </script>  
         </Helmet>  <
         SEO title = { data.markdownRemark.frontmatter.title }
         description = { data.markdownRemark.frontmatter.description }

@@ -1,6 +1,6 @@
 import "https://d3js.org/d3.v6.min.js";
 // import "/node_modules/d3-time-format/";
-// import "https://unpkg.com/billboard.js/dist-esm/billboard.js"
+//import "https://unpkg.com/billboard.js/dist-esm/billboard.js"
 
 const month = new Array();
 month[0] = "Enero";
