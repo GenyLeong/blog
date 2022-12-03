@@ -229,7 +229,6 @@ const prestamos_quantiles = bb.generate({
     },
     bindto: "#prestamos_quantiles",
 });
-
 const deficit_cualitativo = bb.generate({
     // title: {
     //   text: "DÉFICIT HABITACIONAL CUALITATIVO APROXIMADO",
@@ -284,7 +283,6 @@ const deficit_cualitativo = bb.generate({
     },
     bindto: "#deficit_cualitativo",
 });
-
 const deficit_cualitativo_cepal = bb.generate({
     // title: {
     //   text: "DÉFICIT HABITACIONAL CUALITATIVO SEGÚN CEPAL",
@@ -334,7 +332,6 @@ const deficit_cualitativo_cepal = bb.generate({
     },
     bindto: "#deficit_cualitativo_cepal",
 });
-
 document
     .getElementById("select_trabajo")
     .addEventListener("change", function() {
