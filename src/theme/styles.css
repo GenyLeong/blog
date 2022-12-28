@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;600&display=swap');
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+h4 {
+    text-align: center;
+}
+
+body {
+    /* bgGradient='radial(#9ad18b, #bac37f, #ccb782, #d2ac8d, #cca69a)' */
+    line-height: 1.5;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizespeed;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(#FED7D7 0%, #FEEBC8 25%, #FEFCBF 50%, #c6f2ba 75%) !important;
+}
+
+p {
+    font-size: 18px;
+}
+
+small {
+    display: block;
+    font-size: 13px;
+    margin: 4px 0px 16px 0px;
+    text-align: center;
+    color: #737373;
+}
+
+.header-nav {
+    -webkit-box-align: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    left: auto;
+    padding: 0 36px;
+    position: fixed;
+    right: auto;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+.legend_color {
+    display: block;
+    margin: 0 auto 21px auto;
+    max-width: 360px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.color-1 {
+    width: 10px;
+    height: 10px;
+    background-color: #a4a380;
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.color-2 {
+    width: 10px;
+    height: 10px;
+    background-color: #f48a59;
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.color-3 {
+    width: 10px;
+    height: 10px;
+    background-color: #816674;
+    display: inline-block;
+    margin-left: 7px;
+}
+
+#disqus_thread {
+    max-width: 650px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: 24px auto;
+}
+
+img.arrowback {
+    height: 28px;
+    width: 28px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 21px 0;
+    position: fixed;
+}
+
+#select_trabajo {
+    height: 30px;
+    display: block;
+    margin: 30px auto;
+    width: 290px;
+    text-align: center;
+}
+
+.bb-tooltip-container,
+.bb-legend,
+.bb-axis {
+    font-family: "Lato", sans-serif;
+}
+
+.bb-tooltip td>span,
+.bb-tooltip td>svg {
+    height: 3px;
+}
+
+.bb-line {
+    stroke-width: 2px;
+}
+
+.text-credit {
+    margin: 7px auto 2px auto;
+}
+
+.text-credit p {
+    font-size: 14px;
+    margin: 0 auto;
+    padding-bottom: 0 !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .img-responsive {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    img.arrowback {
+        height: 34px;
+        width: 34px;
+    }
+}

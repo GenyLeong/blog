@@ -1,55 +1,58 @@
 {
-    "name": "lewis-gatsby-starter-blog",
-    "description": "A custom Gatsby starter template to start a blog or personal website.",
-    "author": "@lewislbr",
-    "repository": {
-        "type": "git",
-        "url": "https://genyleong.github.io/"
-    },
-    "version": "0.1.0",
-    "license": "MIT",
+    "name": "gatsby-starter-default",
     "private": true,
-    "scripts": {
-        "start": "gatsby develop",
-        "build": "rm -rf .cache && rm -rf public && gatsby build",
-        "serve": "gatsby serve",
-        "lint": "eslint --ext .js,.jsx .",
-        "format": "prettier --write --check \"!.cache\" \"!public\" .",
-        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-    },
+    "description": "A simple starter to get up and developing quickly with Gatsby",
+    "version": "0.1.0",
+    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
     "dependencies": {
-        "babel-plugin-styled-components": "^1.12.0",
-        "d3-time-format": "^4.1.0",
-        "eslint": "^7.15.0",
-        "eslint-plugin-react": "^7.21.5",
-        "gatsby": "^2.28.2",
-        "gatsby-image": "^2.7.0",
-        "gatsby-plugin-catch-links": "^2.6.0",
+        "@chakra-ui/gatsby-plugin": "^2.0.3",
+        "@chakra-ui/react": "^2.4.4",
+        "@emotion/react": "^11.7.1",
+        "@emotion/styled": "^11.6.0",
+        "@mdx-js/mdx": "^1.6.12",
+        "@mdx-js/react": "^1.0.0",
+        "billboard.js": "^3.6.3",
+        "d3": "^7.7.0",
+        "framer-motion": "^6.2.6",
+        "gatsby": "^4.7.1",
         "gatsby-plugin-disqus": "^1.2.2",
+        "gatsby-plugin-gatsby-cloud": "^4.7.0",
         "gatsby-plugin-google-analytics": "^3.5.0",
         "gatsby-plugin-google-gtag": "^3.5.0",
-        "gatsby-plugin-offline": "^3.6.0",
-        "gatsby-plugin-react-helmet": "^3.6.0",
-        "gatsby-plugin-robots-txt": "^1.5.3",
-        "gatsby-plugin-sharp": "^2.10.1",
-        "gatsby-plugin-sitemap": "^2.8.0",
-        "gatsby-plugin-styled-components": "^3.6.0",
-        "gatsby-remark-embed-snippet": "^8.2.0",
-        "gatsby-remark-embedder": "^6.0.1",
-        "gatsby-remark-images": "^3.7.1",
-        "gatsby-remark-prismjs": "^7.2.0",
-        "gatsby-source-filesystem": "^2.7.0",
-        "gatsby-transformer-remark": "^2.16.1",
-        "gatsby-transformer-sharp": "^2.8.0",
-        "prettier": "^2.2.1",
-        "prismjs": "^1.29.0",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "react-helmet": "^6.1.0",
-        "styled-components": "^5.2.1"
+        "gatsby-plugin-image": "^2.7.0",
+        "gatsby-plugin-manifest": "^4.7.0",
+        "gatsby-plugin-mdx": "^3.4.0",
+        "gatsby-plugin-offline": "^5.7.0",
+        "gatsby-plugin-react-helmet": "^5.7.0",
+        "gatsby-plugin-sharp": "^4.7.0",
+        "gatsby-source-filesystem": "^4.7.0",
+        "gatsby-transformer-sharp": "^4.7.0",
+        "prop-types": "^15.8.0",
+        "react": "^18.2.0",
+        "react-billboardjs": "^3.0.3",
+        "react-dom": "^18.2.0",
+        "react-helmet": "^6.1.0"
     },
     "devDependencies": {
-        "d3": "^7.6.1",
-        "gh-pages": "^3.1.0"
+        "prettier": "^2.5.1"
+    },
+    "keywords": [
+        "gatsby"
+    ],
+    "license": "0BSD",
+    "scripts": {
+        "build": "rm -rf .cache && rm -rf public && gatsby build",
+        "develop": "gatsby develop",
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+        "start": "gatsby develop",
+        "clean": "gatsby clean"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    },
+    "bugs": {
+        "url": "https://github.com/gatsbyjs/gatsby/issues"
     }
 }

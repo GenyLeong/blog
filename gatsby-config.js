@@ -1,78 +1,71 @@
 module.exports = {
-    pathPrefix: `/blog`,
-    siteMetadata: {
-        title: "Geny León",
-        titleTemplate: "%s · Geny León",
-        description: "Este es mi blog",
-        siteUrl: "https://genyleong.github.io/", // No trailing slash allowed!
-        DefaultImage: "https://cdn.glitch.com/496050ba-32d7-4365-a29f-6df52c896215%2Fperfil.jpg", // Path to your image you placed in the 'static' folder
-        twitterUsername: "@geny_leong",
+  pathPrefix: `/blog`,
+  siteMetadata: {
+    title: `Geny León | Blog`,
+    description: `Ni por la razón, ni por la fuerza.`,
+    author: `@geny_leong`,
+    siteUrl: `https://genyleong.github.io/`,
+    DefaultImage: "https://cdn.glitch.com/496050ba-32d7-4365-a29f-6df52c896215%2Fperfil.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@geny_leong",
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
     },
-    plugins: [{
-            resolve: `gatsby-plugin-google-gtag`,
-            options: {
-                // You can add multiple tracking ids and a pageview event will be fired for all of them.
-                trackingIds: ["G-397NF0CP5F"],
-            },
-        },
-        `gatsby-plugin-react-helmet`,
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `src`,
-                path: `${__dirname}/src/`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `images`,
-                path: `${__dirname}/src/assets/images`,
-            },
-        },
-        `gatsby-plugin-catch-links`,
-        `gatsby-transformer-sharp`,
-        {
-            resolve: `gatsby-plugin-sharp`,
-            options: {
-                useMozJpeg: true,
-                stripMetadata: true,
-                defaultQuality: 50,
-            },
-        },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: [{
-                    resolve: `gatsby-remark-images`,
-                    options: {
-                        maxWidth: 900,
-                        quality: 75,
-                        withWebp: true,
-                        linkImagesToOriginal: true,
-                    },
-                }, {
-                    resolve: `gatsby-remark-embedder`,
-                    options: {
-                        customTransformers: [
-                            // Your custom transformers
-                        ],
-                        services: {
-                            // The service-specific options by the name of the service
-                        },
-                    },
-                }, ],
-            },
-        },
-        {
-            resolve: `gatsby-plugin-disqus`,
-            options: {
-                shortname: `genyleong`,
-            },
-        },
-        `gatsby-plugin-offline`,
-        `gatsby-plugin-styled-components`,
-        `gatsby-plugin-sitemap`,
-        `gatsby-plugin-robots-txt`,
-    ],
-}
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blogs',
+        path: `${__dirname}/src/blogs`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx', '.md']
+      }
+    },
+    // `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        display: `minimal-ui`,
+        icon: `src/images/girl.svg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: '@chakra-ui/gatsby-plugin',
+      options: {
+        resetCSS: true,
+        isUsingColorMode: false
+      }
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `genyleong`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+          // You can add multiple tracking ids and a pageview event will be fired for all of them.
+          trackingIds: ["G-397NF0CP5F"],
+          pluginConfig: {
+            head: true        
+          }
+      },
+    }
+  ],
+};
